@@ -1,10 +1,16 @@
 FROM python:3.8
+
 LABEL maintainer="Afis"
 
-COPY . /app
+COPY ./techtrends /app
+
 WORKDIR /app
+
 EXPOSE 3111
+
 RUN pip install -r requirements.txt
 
+RUN python ./init_db.py
+
 # command to run on container start
-CMD python init_db.py ; python app.py
+CMD [ "python", "app.py" ]

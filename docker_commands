@@ -1,0 +1,34 @@
+## Docker commands used to build the application 
+# TODO: docker build -t techtrends .
+
+## Docker commands used to run the application
+# TODO: docker run -d -p 7111:3111 techtrends
+
+## Docker commands used to get the application logs
+# TODO: docker logs e6bd21b6f5b9
+
+## Logs from the container running the TechTrends application
+# TODO:  Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+INFO:werkzeug:[03/Sep/2021 15:52:51] -  * Running on http://0.0.0.0:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:[03/Sep/2021 15:53:40] - 172.17.0.1 - - [03/Sep/2021 15:53:40] "GET / HTTP/1.1" 200 -
+INFO:app:[03/Sep/2021 15:54:31] - An existing article "2020 CNCF Annual Report" retrieved
+INFO:werkzeug:[03/Sep/2021 15:54:31] - 172.17.0.1 - - [03/Sep/2021 15:54:31] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:[03/Sep/2021 15:54:35] - 172.17.0.1 - - [03/Sep/2021 15:54:35] "GET / HTTP/1.1" 200 -
+ERROR:app:[03/Sep/2021 15:55:01] - A non-existing article is accessed and a 404 page is returned
+INFO:werkzeug:[03/Sep/2021 15:55:01] - 172.17.0.1 - - [03/Sep/2021 15:55:01] "GET /0 HTTP/1.1" 404 -
+INFO:app:[03/Sep/2021 15:55:12] - The "About Us" page is retrieved.
+INFO:werkzeug:[03/Sep/2021 15:55:12] - 172.17.0.1 - - [03/Sep/2021 15:55:12] "GET /about HTTP/1.1" 200 -
+INFO:werkzeug:[03/Sep/2021 15:55:25] - 172.17.0.1 - - [03/Sep/2021 15:55:25] "GET /create HTTP/1.1" 200 -
+INFO:app:[03/Sep/2021 15:55:44] - A new article "Docker conference 2021" is created
+INFO:werkzeug:[03/Sep/2021 15:55:44] - 172.17.0.1 - - [03/Sep/2021 15:55:44] "POST /create HTTP/1.1" 302 -
+INFO:werkzeug:[03/Sep/2021 15:55:44] - 172.17.0.1 - - [03/Sep/2021 15:55:44] "GET / HTTP/1.1" 200 -
+INFO:app:[03/Sep/2021 15:55:53] - Metrics request successfull
+INFO:werkzeug:[03/Sep/2021 15:55:53] - 172.17.0.1 - - [03/Sep/2021 15:55:53] "GET /metrics HTTP/1.1" 200 -
+INFO:app:[03/Sep/2021 15:56:01] - Status request successfull
+INFO:werkzeug:[03/Sep/2021 15:56:01] - 172.17.0.1 - - [03/Sep/2021 15:56:01] "GET /healthz HTTP/1.1" 200 -
+INFO:werkzeug:[03/Sep/2021 15:56:52] - 172.17.0.1 - - [03/Sep/2021 15:56:52] "GET / HTTP/1.1" 200 -
+
