@@ -1,8 +1,0 @@
-.github
-.git
-.venv
-*.md
-!README.md
-*.db
-.gitignore
-.dockerignore
